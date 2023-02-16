@@ -1,1 +1,397 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Accurate and innovative molecular modeling">
+    <meta name="author" content="HTuO">
+
+    <!--Thumbnail-->
+    <meta property="og:title" 
+      content="HTuO Biosciences" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://http://localhost:4000/about.html" />
+    <meta property="og:image" content="https://http://localhost:4000/img/htuobio.png" />
+    <meta property="og:image:secure_url" content="https://http://localhost:4000/img/htuobio.png" />
+
+    <!--Browser tab icon-->
+    <link rel="icon" href="../img/favicon.png">
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+
+    <!-- Vue -->
+    <script src="/js/vue.min.js"></script>
+    <script src="/js/vue-smooth-scroll.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+</html>
+
+
+<body id="page-top" class="about">
+  <div class="container-fluid" id="app">
+    <nav ref="navBlock" class="desktop-nav" :class="{active: navFill}" role="navigation">
+  <div class="container">
+    <ul>
+      <li class="home">
+        <a class="navbar-brand" href="index.html" @click="closeNav()"><span class="brand" aria-label="HTuO Biosciences" alt="HTuO Biosciences">
+            HTuO Biosciences
+          </span></a>
+      </li>
+      <li class="technology nav-item">
+        <a href="/technology.html" @click="closeNav()">Technology</a>
+      </li>
+      <li class="research nav-item">
+        <a href="/research.html" @click="closeNav()">Research</a>
+      </li>
+      <li class="partnership nav-item">
+        <a href="/partnership.html" @click="closeNav()">Partnership</a>
+      </li>
+      <li class="about nav-item">
+        <a href="/about.html" @click="closeNav()">About</a>
+      </li>
+      <li class="news nav-item">
+        <a href="/news.html" @click="closeNav()">News</a>
+      </li>
+      <li class="contact nav-item">
+        <a href="/contact.html" @click="closeNav()">Contact</a>
+      </li>
+      <li class="nav-toggle" @click="clickNav()">
+        <button type="button" :class="{active: navActive}">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </li>
+    </ul>
+  </div> 
+</nav>
+
+<nav class="mobile-menu" aria-expanded="false" aria-label="Mobile Accessibility Navigation Dropdown" :class="{mobile: navActive}" role="navigation">
+  <ul>
+    <li class="technology nav-item">
+      <a href="/technology.html">Technology</a>
+    </li>
+    <li class="research nav-item">
+      <a href="/research.html">Research</a>
+    </li>
+    <li class="partnership nav-item">
+      <a href="/partnership.html">Partnership</a>
+    </li>
+    <li class="about nav-item">
+      <a href="/about.html">About</a>
+    </li>
+    <li class="contact nav-item">
+      <a href="/contact.html">Contact</a>
+    </li>
+    <li class="nav-item social">
+      <a href="https://mobile.twitter.com/htuobiosciences" target="_blank"><img src="img/icon-twitter.svg" alt="Icon Twitter"/></a>
+      <a href="https://ca.linkedin.com/company/htuobio" target="_blank"><img src="img/icon-linkedin.svg" alt="Icon LinkedIn"/></a>
+    </li>
+  </ul>
+</nav>
+
+
+    <!-- Main Banner -->
+<section class="page-banner fill-blue-grad text-light" ref="bannerBlock">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-push-6">
+        <div class="anim-about">
+          <div class="graph"></div>
+          <span v-for="(i,k) in 10" :key="k">
+          </span>
+        </div>
+      </div>
+      <div class="col-md-6 col-md-pull-6 banner-block">
+        <h2><small>About Us</small></h2>
+        <h2>A <span>revolution</span> in drug discovery & development</h2>
+        <p class="lead">Drug development is time consuming, resource intensive and fails 90% of the time. A more predictive lead optimization process can lower the failure rate by improving effectiveness, lowering toxicity and increasing the absorption of drugs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <h3>Our Mission</h3>
+        <p>HTuO Biosciences is a deep tech company, working at the interface of chemistry and computer programming, to develop an advanced molecular simulation capable of accurately predicting the behaviour of molecules for the purpose of drug development.</p>
+      </div>
+    </div>
+    <div class="row section-pad-sm">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-sm-2">
+          <img style="max-width: 120px;" src="img/icon-chemistry.svg" alt="Icon Chemistry" />
+        </div>
+        <div class="col-sm-10">
+          <h5>Identifying Drug Candidates</h5>
+          <p>Drug development is costly and risky, with a 90% failure rate. HTuO's physics-based molecular modeling solution will reduce time and resources needed to develop drugs.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-sm-2">
+          <img style="max-width: 120px;"  src="img/icon-discovery.svg" alt="Icon Chemistry" />
+        </div>
+        <div class="col-sm-10">
+          <h5>It all starts with Physics</h5>
+          <p>By starting with the physics of individual atoms, we have developed a brand new energy equation for molecular systems, which allows us to derive a new and accurate force field.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-sm-2">
+          <img style="max-width: 120px;"  src="img/icon-flow.svg" alt="Icon Chemistry" />
+        </div>
+        <div class="col-sm-10">
+          <h5>Differentiation</h5>
+          <p>HTuO is an innovative tool that can accurately simulate and calculate properties, making it an invaluable resource for drug designers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <a href="technology" class="btn btn-primary btn-outline btn-arrow">Our Technology <span class="arrow"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section -->
+<section class="section-pad fill-light team">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>A <span>world class</span> team of Specialists</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="team-list" :class="{active: teamActive}">
+        <div class="person af" ref="anthony-fejes">
+          <img @click="showProfile('anthony-fejes')" src="img/anthony-fejes.jpg" alt="Dr. Anthony Fejes"/>
+          <div class="title">
+            <h6 @click="showProfile('anthony-fejes')">Dr. Anthony Fejes</h6>
+            <p>Co-Founder and CEO</p>
+          </div>
+          <div class="col-md-4 col-md-offset-4 bio">
+            <div class="close" @click="closeProfile()">X</div>
+            <p>Dr. Anthony Fejes holds undergraduate degrees in biochemistry and Independent Studies (Bioinformatics) from the University of Waterloo, as well as a Masters degree in Microbiology & Immunology and a PhD in Bioinformatics from the University of British Columbia. Anthony started his science career as the scientific co-founder and Chief Scientific Officer at Zymeworks Inc, before working for companies such as Fabric Genomics and Tenaya Therapeutics in the Bay Area and New York based SolveBio.  His experience pairs over 20 years of professional experience as a programmer with a deep background in genomics, biochemistry and data analysis, as well as a decade of management and startup experience.</p>
+          </div>
+        </div>
+        <div class="person as" ref="alex-shynkarenko">
+          <img @click="showProfile('alex-shynkarenko')" src="img/alex-shynkarenko.jpg" alt="Alex Shynkarenko"/>
+          <div class="title">
+            <h6 @click="showProfile('alex-shynkarenko')">Alex Shynkarenko</h6>
+            <p>Co-Founder and CTO</p>
+          </div>
+          <div class="col-md-4 col-md-offset-4 bio">
+            <div class="close" @click="closeProfile()">X</div>
+            <p>Alexander Shynkarenko is a computational biologist and data scientist. He graduated from Igor Sikorsky Kyiv Polytechnic Institute with a Master’s in Bioinformatics. and started his career in biotech as a co-founder of Biotopia, the first open labspace in Ukraine, before moving to computational biology. Most recently, he worked as a bioinformatician at Ryvu Therapeutics, a Polish drug discovery company, where he provided data science, machine learning, and bioinformatics analyses for novel anticancer drug candidate programs. Alexander is also a board member at Genomics UA, Ukraine’s largest computational biology professional network.</p>
+          </div>
+        </div>
+      </div>
+      <div class="team-list-2" :class="{active: teamActive}">
+        <div class="person" ref="yi-hsuan-lin">
+          <img @click="showProfile('yi-hsuan-lin')" src="img/yi-hsuan-lin.jpg" alt="Yi-Hsuan Lin"/>
+          <div class="title">
+            <h6 @click="showProfile('yi-hsuan-lin')">Yi-Hsuan Lin</h6>
+            <p>Research & Development Lead</p>
+          </div>
+          <div class="col-md-4 col-md-offset-4 bio">
+            <div class="close" @click="closeProfile()">X</div>
+            <p>Dr. Yi-Hsuan Lin completed his bachelors in physics at the University of Illinois at Urbana-Champaign and PhD in physics at the Ohio State University. After that he became a joint postdoctoral fellow at the University of Toronto and the Hospital for Sick Children,  publishing 12 peer-reviewed papers in theoretical biophysics, computational biochemistry, and quantitative biology. Dr. Lin joined HTuO Biosciences in January 2021, bringing with him a broad experience in software development, molecular modelling and machine learning.</p>
+          </div>
+        </div>
+        <div class="person" ref="emily-wilson">
+          <img @click="showProfile('emily-wilson')" src="img/emily-wilson.jpg" alt="Emily Wilson"/>
+          <div class="title">
+            <h6 @click="showProfile('emily-wilson')">Emily Wilson</h6>
+            <p>Scientist - Molecular Modeling, Development</p>
+          </div>
+          <div class="col-md-4 col-md-offset-4 bio">
+            <div class="close" @click="closeProfile()">X</div>
+            <p>Emily Wilson is a physicist who is specialized in computational statistical physics. She completed her bachelor’s degree at the University of British Columbia and MSc. at McGill University. At HTuO Emily uses her background in software development and physics to fulfill her role as a Molecular Modelling Scientist. Emily enjoys finding the best solutions to difficult problems and collaborating with her teammates. In her spare time Emily can often be found on skis in the winter and biking in the summer.</p>
+          </div>
+        </div>
+        <div class="person" ref="ahmed-ayoub">
+          <img @click="showProfile('ahmed-ayoub')" src="img/ahmed-ayoub.jpg" alt="Ahmed Ayoub"/>
+          <div class="title">
+            <h6 @click="showProfile('ahmed-ayoub')">Ahmed Ayoub</h6>
+            <p>Scientist - Computational Chemistry</p>
+          </div>
+          <div class="col-md-4 col-md-offset-4 bio">
+            <div class="close" @click="closeProfile()">X</div>
+            <p>After ranking first in high school all over Egypt, Dr. Ahmed Ayoub completed his bachelors degree with a full scholarship in pharmacy and pharmaceutical biotechnology at the German University in Cairo. He obtained his PhD in computational chemistry with focus on DFT, Hybrid QMMM biomolecular simulations and drug design at the University of Alberta, where he was a recipient of the prestigious President's International Doctoral Award. He has published about 20 international peer-reviewed papers in biomolecular simulations and drug design with focus on design and understanding of anticancer therapeutics.</p>
+          </div>
+        </div>
+        <div class="person" ref="ahmad-navid">
+          <img @click="showProfile('ahmad-navid')" src="img/ahmad-navid.jpg" alt="Ahmad Navid"/>
+          <div class="title">
+            <h6 @click="showProfile('ahmad-navid')">Ahmad Navid</h6>
+            <p>Software Engineer</p>
+          </div>
+          <div class="col-md-4 col-md-offset-4 bio">
+            <div class="close" @click="closeProfile()">X</div>
+            <p>Ahmad Navid holds undergraduate degree in Bioinformatics from Quaid-i-Azam University Pakistan as well as a Masters degree in Bioinformatics from National University of Science and Technology Pakistan. In addition to two publications in molecular dynamics simulations, Navid also has experience in artificial intelligence and medical informatics.</p>
+          </div>
+        </div>
+        <div class="person" ref="jacek-mis">
+          <img @click="showProfile('jacek-mis')" src="img/jacek-mis.jpg" alt="Jackek Mis"/>
+          <div class="title">
+            <h6 @click="showProfile('jacek-mis')">Jacek Mis</h6>
+            <p>Director of Business <br>Development</p>
+          </div>
+          <div class="col-md-4 col-md-offset-4 bio">
+            <div class="close" @click="closeProfile()">X</div>
+            <p>Jacek Mis is a biotech business development professional with over 20 years of experience in the life sciences sector. His passion for cell biology led him to work behind the bench in several different fields including epigenetics, wound healing, inflammation, and GMO's. As a business professional, he focused on optimizing product-market fit for bioprinting technology, encapsulated antibiotics, radiopharmaceuticals, and cell therapies. He has previously worked at Aspect Biosystems and adMare Bioinnovations. Jacek holds an MBA from Sauder School of Business, MSc in Medical Biotechnology from Jagiellonian University, and an undergrad degree in cell biology and genetics from the University of British Columbia. Based in Vancouver, Canada, Jacek is also a dad, partner, soccer player, runner, and board game enthusiast.</p>
+          </div>
+        </div>
+        <div class="person" ref="vladimir-nikolic">
+          <img @click="showProfile('vladimir-nikolic')" src="img/vladimir-nikolic.jpg" alt="Vladimir Nikolic"/>
+          <div class="title">
+            <h6 @click="showProfile('vladimir-nikolic')">Vladimir Nikolic</h6>
+            <p>Software Engineer</p>
+          </div>
+          <div class="col-md-4 col-md-offset-4 bio">
+            <div class="close" @click="closeProfile()">X</div>
+            <p>Vladimir holds an undergraduate degree in Software Engineering from the University of Belgrade and a master's degree in Bioinformatics from the University of British Columbia. With the goal of combining his software engineering skills with science, he has worked at the Institute of Physics Belgrade working on a nature-inspired authentication system, at Michael Smith Genome Sciences Centre in Vancouver developing bioinformatics algorithms, and now at HTuO Biosciences as a software engineer. In his free time, Vladimir spends time in nature, reads, and likes to go snowboarding.</p>
+          </div>
+        </div>
+        <div class="person sc" ref="samantha-schoffer">
+          <img @click="showProfile('samantha-schoffer')" src="img/samantha-schoffer.jpg" alt="Samantha Schoffer"/>
+          <div class="title">
+            <h6 @click="showProfile('samantha-schoffer')">Samantha Schoffer</h6>
+            <p>Office Manager</p>
+          </div>
+          <div class="col-md-4 col-md-offset-4 bio">
+            <div class="close" @click="closeProfile()">X</div>
+            <p>Samantha, or Sam for short, is originally from Toronto, having graduated from George Brown College specializing in Business Management.   Sam came out to Vancouver 10 years ago for a vacation and never went back.  She's a fan of the arts, enjoys music, dog walking, cat snuggling and, of course, delicious food.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="job-notice text-light section-pad-md">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-sm-12">
+        <h3>We're Hiring!</h3>
+        <p>We are looking for creative people to join our team.</p>
+        <a href="careers.html" class="btn btn-light btn-outline btn-arrow">Apply Now <span class="arrow"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section -->
+<section class="fill-blue section-pad text-light section-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-pull-0 col-sm-12 text-right">
+        <img src="img/img-careers.png" alt="Team Image"/>
+        <br>
+      </div>
+      <div class="col-md-6 col-md-push-1 col-sm-12">
+        <div class="text-block">
+          <h3><small>Join the HTuO Team</small></h3>
+          <h3>Join the HTuO Team</h3>
+          <p>Our primary objective is to utilize the technology to develop drug optimization applications. There are also further applications in material sciences and complex biophysics.</p>
+          <a href="careers.html" class="btn btn-light btn-outline">Get in Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!DOCTYPE html>
+  <footer>
+    <div class="container">
+      <div class="row footer-nav">
+        <div class="col-md-3 logo">
+          <a class="brand" href="index.html"></a>
+        </div>
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-4 break">
+              <h6><a href="research.html">Our Research</a></h6>
+              <h6><a href="technology.html">Our Technology</a></h6>
+              <h6><a href="partnership.html">Partnerships</a></h6>
+            </div>
+            <div class="col-md-4 break">
+              <h6><a href="about.html">About Us</a></h6>
+              <h6><a href="careers.html">Careers</a></h6>
+            </div>
+            <div class="col-md-4 break end">
+              <h6><a href="news.html">News & Events</a></h6>
+              <h6><a href="contact.html">Contact Us</a></h6>
+              <h6><a href="faq.html">FAQ</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <ul class="social">
+            <li>
+              <a href="https://mobile.twitter.com/htuobiosciences" class="tw" target="_blank">
+                <!-- <img src="img/icon-twitter.svg" alt="Icon Twitter"/> -->
+              </a>
+              <a href="https://ca.linkedin.com/company/htuobio" class="li" target="_blank">
+                <!-- <img src="img/icon-linkedin.svg" alt="Icon LinkedIn"/> -->
+              </a>
+            </li>
+            <li>
+              <p>400-610 Main St Vancouver, BC, Canada</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 copyright text-md-left text-sm-center">
+          <p class="copy">©Copyright 2023 HTuO Biosciences Inc.</p>
+        </div>
+        <div class="col-md-6 terms text-md-right text-sm-center">
+          <p><a href="privacy.html">Privacy Policy</a><span>|</span><a href="terms.html">Terms & Conditions</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
+  </div>  
+    <!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/js/retina.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/custom.js"></script>  
+</body>
+
 

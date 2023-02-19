@@ -14,9 +14,6 @@ new Vue({
     }
   },
   mounted() {
-    this.navHeight = this.$refs.navBlock.clientHeight;
-    this.bannerHeight = this.$refs.bannerBlock.clientHeight - this.navHeight;
-    
     window.addEventListener("scroll", this.onScroll);
 
     for (let [key, value] of Object.entries(this.$refs)) {

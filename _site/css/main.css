@@ -2220,14 +2220,13 @@ section img, section svg {
 }
 .anim-about span:nth-child(1) {
   position: absolute;
-  top: 32px;
   left: calc((1 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 1;
-  animation: bounceAbout1 5s infinite;
+  animation: bounceAbout1 3s infinite;
 }
 @keyframes bounceAbout1 {
   0% {
@@ -2256,14 +2255,13 @@ section img, section svg {
 }
 .anim-about span:nth-child(2) {
   position: absolute;
-  top: 85px;
   left: calc((2 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 2;
-  animation: bounceAbout2 5s infinite;
+  animation: bounceAbout1 3s infinite;
 }
 @keyframes bounceAbout2 {
   0% {
@@ -2292,14 +2290,13 @@ section img, section svg {
 }
 .anim-about span:nth-child(3) {
   position: absolute;
-  top: 18px;
   left: calc((3 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 3;
-  animation: bounceAbout3 5s infinite;
+  animation: bounceAbout1 3s infinite;
 }
 @keyframes bounceAbout3 {
   0% {
@@ -2328,14 +2325,13 @@ section img, section svg {
 }
 .anim-about span:nth-child(4) {
   position: absolute;
-  top: 10px;
   left: calc((4 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 4;
-  animation: bounceAbout4 4s infinite;
+  animation: bounceAbout1 3s infinite;
 }
 @keyframes bounceAbout4 {
   0% {
@@ -2364,14 +2360,13 @@ section img, section svg {
 }
 .anim-about span:nth-child(5) {
   position: absolute;
-  top: 85px;
   left: calc((5 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 5;
-  animation: bounceAbout5 4s infinite;
+  animation: bounceAbout1 3s infinite;
 }
 @keyframes bounceAbout5 {
   0% {
@@ -2400,14 +2395,13 @@ section img, section svg {
 }
 .anim-about span:nth-child(6) {
   position: absolute;
-  top: 42px;
   left: calc((6 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 6;
-  animation: bounceAbout6 5s infinite;
+  animation: bounceAbout1 3s infinite;
 }
 @keyframes bounceAbout6 {
   0% {
@@ -2436,14 +2430,13 @@ section img, section svg {
 }
 .anim-about span:nth-child(7) {
   position: absolute;
-  top: 77px;
   left: calc((7 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 7;
-  animation: bounceAbout7 5s infinite;
+  animation: bounceAbout1 3s infinite;
 }
 @keyframes bounceAbout7 {
   0% {
@@ -2472,14 +2465,13 @@ section img, section svg {
 }
 .anim-about span:nth-child(8) {
   position: absolute;
-  top: 48px;
   left: calc((8 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 8;
-  animation: bounceAbout8 4s infinite;
+  animation: bounceAbout1 3s infinite;
 }
 @keyframes bounceAbout8 {
   0% {
@@ -2508,14 +2500,13 @@ section img, section svg {
 }
 .anim-about span:nth-child(9) {
   position: absolute;
-  top: 41px;
   left: calc((9 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 9;
-  animation: bounceAbout9 5s infinite;
+  animation: bounceAbout1 3s infinite;
 }
 @keyframes bounceAbout9 {
   0% {
@@ -2544,14 +2535,13 @@ section img, section svg {
 }
 .anim-about span:nth-child(10) {
   position: absolute;
-  top: 50px;
   left: calc((10 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 10;
-  animation: bounceAbout10 5s infinite;
+  animation: bounceAbout1 3s infinite;
 }
 @keyframes bounceAbout10 {
   0% {

@@ -280,14 +280,14 @@
 
     span:nth-child(#{$i}) {
       position: absolute;
-      top: #{$rany}px;
+      // top: #{$rany}px;
       left: calc((#{$i} * 10%) - 10%);
       width: 15px;
       height: 15px;
       border-radius: 50%;
       background: #fff;
       z-index: #{$i};
-      animation: bounceAbout#{$i} ($ran + 3s) infinite;
+      animation: bounceAbout1 (3s) infinite;
     }
 
     // calc(#{$i} * 15px)

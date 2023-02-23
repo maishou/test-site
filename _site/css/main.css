@@ -2220,7 +2220,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(1) {
   position: absolute;
-  top: 99px;
+  top: 61px;
   left: calc((1 * 10%) - 10%);
   width: 15px;
   height: 15px;
@@ -2234,137 +2234,81 @@ section img, section svg {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(1 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
   }
 }
-@keyframes bounceAboutUp1 {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-  50% {
-    transform: translate(0px, -50px) scale(1.5);
-    filter: blur(3px);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-}
 .anim-about span:nth-child(2) {
   position: absolute;
-  top: 76px;
+  top: 23px;
   left: calc((2 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 2;
-  animation: bounceAbout2 6s infinite;
+  animation: bounceAbout2 3s infinite;
 }
 @keyframes bounceAbout2 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(2 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
   }
 }
-@keyframes bounceAboutUp2 {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-  50% {
-    transform: translate(0px, -50px) scale(1.5);
-    filter: blur(3px);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-}
 .anim-about span:nth-child(3) {
   position: absolute;
-  top: 49px;
+  top: 85px;
   left: calc((3 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 3;
-  animation: bounceAbout3 6s infinite;
+  animation: bounceAbout3 3s infinite;
 }
 @keyframes bounceAbout3 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(3 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
   }
 }
-@keyframes bounceAboutUp3 {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-  50% {
-    transform: translate(0px, -50px) scale(1.5);
-    filter: blur(3px);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-}
 .anim-about span:nth-child(4) {
   position: absolute;
-  top: 14px;
+  top: 83px;
   left: calc((4 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 4;
-  animation: bounceAbout4 6s infinite;
+  animation: bounceAbout4 3s infinite;
 }
 @keyframes bounceAbout4 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(4 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
   }
 }
-@keyframes bounceAboutUp4 {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-  50% {
-    transform: translate(0px, -50px) scale(1.5);
-    filter: blur(3px);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-}
 .anim-about span:nth-child(5) {
   position: absolute;
-  top: 43px;
+  top: 22px;
   left: calc((5 * 10%) - 10%);
   width: 15px;
   height: 15px;
@@ -2378,65 +2322,37 @@ section img, section svg {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(5 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
   }
 }
-@keyframes bounceAboutUp5 {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-  50% {
-    transform: translate(0px, -50px) scale(1.5);
-    filter: blur(3px);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-}
 .anim-about span:nth-child(6) {
   position: absolute;
-  top: 46px;
+  top: 94px;
   left: calc((6 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 6;
-  animation: bounceAbout6 6s infinite;
+  animation: bounceAbout6 3s infinite;
 }
 @keyframes bounceAbout6 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(6 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
   }
 }
-@keyframes bounceAboutUp6 {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-  50% {
-    transform: translate(0px, -50px) scale(1.5);
-    filter: blur(3px);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-}
 .anim-about span:nth-child(7) {
   position: absolute;
-  top: 9px;
+  top: 28px;
   left: calc((7 * 10%) - 10%);
   width: 15px;
   height: 15px;
@@ -2450,29 +2366,15 @@ section img, section svg {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(7 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
   }
 }
-@keyframes bounceAboutUp7 {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-  50% {
-    transform: translate(0px, -50px) scale(1.5);
-    filter: blur(3px);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-}
 .anim-about span:nth-child(8) {
   position: absolute;
-  top: 39px;
+  top: 78px;
   left: calc((8 * 10%) - 10%);
   width: 15px;
   height: 15px;
@@ -2486,29 +2388,15 @@ section img, section svg {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(8 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
   }
 }
-@keyframes bounceAboutUp8 {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-  50% {
-    transform: translate(0px, -50px) scale(1.5);
-    filter: blur(3px);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-}
 .anim-about span:nth-child(9) {
   position: absolute;
-  top: 25px;
+  top: 54px;
   left: calc((9 * 10%) - 10%);
   width: 15px;
   height: 15px;
@@ -2522,29 +2410,15 @@ section img, section svg {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(9 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
   }
 }
-@keyframes bounceAboutUp9 {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-  50% {
-    transform: translate(0px, -50px) scale(1.5);
-    filter: blur(3px);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-}
 .anim-about span:nth-child(10) {
   position: absolute;
-  top: 73px;
+  top: 10px;
   left: calc((10 * 10%) - 10%);
   width: 15px;
   height: 15px;
@@ -2558,24 +2432,10 @@ section img, section svg {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(10 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
-  }
-}
-@keyframes bounceAboutUp10 {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
-  }
-  50% {
-    transform: translate(0px, -50px) scale(1.5);
-    filter: blur(3px);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-    filter: blur(5px);
   }
 }
 

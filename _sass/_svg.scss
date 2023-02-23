@@ -280,22 +280,22 @@
 
     span:nth-child(#{$i}) {
       position: absolute;
-      top: #{$rany}px;
-      left: calc((#{$i} * 10%) - 10%);
+      top: #{$rany*1px};
+      left: calc(($i * 10%) - 10%);
       width: 15px;
       height: 15px;
       border-radius: 50%;
       background: #fff;
       z-index: #{$i};
-      animation: bounceAbout 3s infinite;
+      animation: bounceAbout#{$i} #{$i*3}s infinite;
     }
 
-    @keyframes bounceAbout {
+    @keyframes bounceAbout#{$i} {
       0% { 
         transform: translate(0px, 0px);
       }
       50% { 
-        transform: translate(0px, 50px);
+        transform: translate(0px, #{$i*15}px);
       }
       100% { 
         transform: translate(0px, 0px);

@@ -287,15 +287,15 @@
       border-radius: 50%;
       background: #fff;
       z-index: #{$i};
-      animation: bounceAbout#{$i} 3s infinite;
+      animation: bounceAbout 3s infinite;
     }
 
-    @keyframes bounceAbout#{$i} {
+    @keyframes bounceAbout {
       0% { 
         transform: translate(0px, 0px);
       }
       50% { 
-        transform: translate(0px, calc(#{$i} * 15px));
+        transform: translate(0px, 50px);
       }
       100% { 
         transform: translate(0px, 0px);

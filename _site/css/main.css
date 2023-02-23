@@ -2220,21 +2220,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(1) {
   position: absolute;
-  top: 61px;
+  top: 40px;
   left: calc((1 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 1;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout 3s infinite;
 }
-@keyframes bounceAbout1 {
+@keyframes bounceAbout {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, calc(1 * 15px));
+    transform: translate(0px, 50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2242,21 +2242,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(2) {
   position: absolute;
-  top: 23px;
+  top: 71px;
   left: calc((2 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 2;
-  animation: bounceAbout2 3s infinite;
+  animation: bounceAbout 3s infinite;
 }
-@keyframes bounceAbout2 {
+@keyframes bounceAbout {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, calc(2 * 15px));
+    transform: translate(0px, 50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2264,21 +2264,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(3) {
   position: absolute;
-  top: 85px;
+  top: 24px;
   left: calc((3 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 3;
-  animation: bounceAbout3 3s infinite;
+  animation: bounceAbout 3s infinite;
 }
-@keyframes bounceAbout3 {
+@keyframes bounceAbout {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, calc(3 * 15px));
+    transform: translate(0px, 50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2286,21 +2286,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(4) {
   position: absolute;
-  top: 83px;
+  top: 91px;
   left: calc((4 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 4;
-  animation: bounceAbout4 3s infinite;
+  animation: bounceAbout 3s infinite;
 }
-@keyframes bounceAbout4 {
+@keyframes bounceAbout {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, calc(4 * 15px));
+    transform: translate(0px, 50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2308,21 +2308,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(5) {
   position: absolute;
-  top: 22px;
+  top: 92px;
   left: calc((5 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 5;
-  animation: bounceAbout5 3s infinite;
+  animation: bounceAbout 3s infinite;
 }
-@keyframes bounceAbout5 {
+@keyframes bounceAbout {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, calc(5 * 15px));
+    transform: translate(0px, 50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2330,21 +2330,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(6) {
   position: absolute;
-  top: 94px;
+  top: 16px;
   left: calc((6 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 6;
-  animation: bounceAbout6 3s infinite;
+  animation: bounceAbout 3s infinite;
 }
-@keyframes bounceAbout6 {
+@keyframes bounceAbout {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, calc(6 * 15px));
+    transform: translate(0px, 50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2352,21 +2352,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(7) {
   position: absolute;
-  top: 28px;
+  top: 76px;
   left: calc((7 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 7;
-  animation: bounceAbout7 3s infinite;
+  animation: bounceAbout 3s infinite;
 }
-@keyframes bounceAbout7 {
+@keyframes bounceAbout {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, calc(7 * 15px));
+    transform: translate(0px, 50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2374,21 +2374,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(8) {
   position: absolute;
-  top: 78px;
+  top: 66px;
   left: calc((8 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 8;
-  animation: bounceAbout8 3s infinite;
+  animation: bounceAbout 3s infinite;
 }
-@keyframes bounceAbout8 {
+@keyframes bounceAbout {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, calc(8 * 15px));
+    transform: translate(0px, 50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2396,21 +2396,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(9) {
   position: absolute;
-  top: 54px;
+  top: 56px;
   left: calc((9 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 9;
-  animation: bounceAbout9 3s infinite;
+  animation: bounceAbout 3s infinite;
 }
-@keyframes bounceAbout9 {
+@keyframes bounceAbout {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, calc(9 * 15px));
+    transform: translate(0px, 50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2418,21 +2418,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(10) {
   position: absolute;
-  top: 10px;
+  top: 48px;
   left: calc((10 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 10;
-  animation: bounceAbout10 3s infinite;
+  animation: bounceAbout 3s infinite;
 }
-@keyframes bounceAbout10 {
+@keyframes bounceAbout {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, calc(10 * 15px));
+    transform: translate(0px, 50px);
   }
   100% {
     transform: translate(0px, 0px);

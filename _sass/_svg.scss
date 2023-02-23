@@ -281,7 +281,7 @@
     span:nth-child(#{$i}) {
       position: absolute;
       top: #{$rany*1px};
-      left: calc(($i * 10%) - 10%);
+      left: #{$i*10}%;
       width: 15px;
       height: 15px;
       border-radius: 50%;

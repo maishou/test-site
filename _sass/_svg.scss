@@ -35,7 +35,7 @@
 
         &:after {
           animation: bounceReverse 5s infinite;
-          animation-delay: calc(#{$i}s * 0.3s);
+          animation-delay: #{$i*0.3}s);
         }
       }
     }
@@ -73,7 +73,7 @@
       border-radius: 50%;
       border: 3px solid rgba(var(--secondary));
       animation: bounceCircle 5s infinite;
-      animation-delay: calc(#{$i}s * 0.3s);
+      animation-delay: #{$i*0.3}s);
     }
   }
 

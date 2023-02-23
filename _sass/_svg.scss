@@ -280,37 +280,35 @@
 
     span:nth-child(#{$i}) {
       position: absolute;
-      // top: #{$rany}px;
+      top: #{$rany}px;
       left: calc((#{$i} * 10%) - 10%);
       width: 15px;
       height: 15px;
       border-radius: 50%;
       background: #fff;
       z-index: #{$i};
-      animation: bounceAbout1 3s infinite;
+      animation: bounceAbout#{$i} calc($ran * 3s) infinite;
     }
 
-    // calc(#{$i} * 15px)
     @keyframes bounceAbout#{$i} {
       0% { 
         transform: translate(0px, 0px);
       }
       50% { 
-        transform: translate(0px, 50px);
+        transform: translate(0px, calc(#{$i} * 15px));
       }
       100% { 
         transform: translate(0px, 0px);
       }
     }
 
-    // calc(#{$i} * 5px)
     @keyframes bounceAboutUp#{$i} {
       0% { 
         transform: translate(0px, 0px) scale(1);
         filter: blur(5px);
       }
       50% { 
-        transform: translate(0px, 50px) scale(1.5);
+        transform: translate(0px, calc(#{$i} * -1 * 5px)) scale(1.5);
         filter: blur(3px);
       }
       100% { 

@@ -2220,20 +2220,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(1) {
   position: absolute;
+  top: 26px;
   left: calc((1 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 1;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout1 6s infinite;
 }
 @keyframes bounceAbout1 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(1 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
@@ -2245,7 +2246,7 @@ section img, section svg {
     filter: blur(5px);
   }
   50% {
-    transform: translate(0px, 50px) scale(1.5);
+    transform: translate(0px, calc(1 * -1 * 5px)) scale(1.5);
     filter: blur(3px);
   }
   100% {
@@ -2255,20 +2256,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(2) {
   position: absolute;
+  top: 18px;
   left: calc((2 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 2;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout2 6s infinite;
 }
 @keyframes bounceAbout2 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(2 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
@@ -2280,7 +2282,7 @@ section img, section svg {
     filter: blur(5px);
   }
   50% {
-    transform: translate(0px, 50px) scale(1.5);
+    transform: translate(0px, calc(2 * -1 * 5px)) scale(1.5);
     filter: blur(3px);
   }
   100% {
@@ -2290,20 +2292,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(3) {
   position: absolute;
+  top: 21px;
   left: calc((3 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 3;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout3 3s infinite;
 }
 @keyframes bounceAbout3 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(3 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
@@ -2315,7 +2318,7 @@ section img, section svg {
     filter: blur(5px);
   }
   50% {
-    transform: translate(0px, 50px) scale(1.5);
+    transform: translate(0px, calc(3 * -1 * 5px)) scale(1.5);
     filter: blur(3px);
   }
   100% {
@@ -2325,20 +2328,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(4) {
   position: absolute;
+  top: 51px;
   left: calc((4 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 4;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout4 6s infinite;
 }
 @keyframes bounceAbout4 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(4 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
@@ -2350,7 +2354,7 @@ section img, section svg {
     filter: blur(5px);
   }
   50% {
-    transform: translate(0px, 50px) scale(1.5);
+    transform: translate(0px, calc(4 * -1 * 5px)) scale(1.5);
     filter: blur(3px);
   }
   100% {
@@ -2360,20 +2364,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(5) {
   position: absolute;
+  top: 51px;
   left: calc((5 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 5;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout5 6s infinite;
 }
 @keyframes bounceAbout5 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(5 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
@@ -2385,7 +2390,7 @@ section img, section svg {
     filter: blur(5px);
   }
   50% {
-    transform: translate(0px, 50px) scale(1.5);
+    transform: translate(0px, calc(5 * -1 * 5px)) scale(1.5);
     filter: blur(3px);
   }
   100% {
@@ -2395,20 +2400,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(6) {
   position: absolute;
+  top: 91px;
   left: calc((6 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 6;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout6 3s infinite;
 }
 @keyframes bounceAbout6 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(6 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
@@ -2420,7 +2426,7 @@ section img, section svg {
     filter: blur(5px);
   }
   50% {
-    transform: translate(0px, 50px) scale(1.5);
+    transform: translate(0px, calc(6 * -1 * 5px)) scale(1.5);
     filter: blur(3px);
   }
   100% {
@@ -2430,20 +2436,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(7) {
   position: absolute;
+  top: 15px;
   left: calc((7 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 7;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout7 3s infinite;
 }
 @keyframes bounceAbout7 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(7 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
@@ -2455,7 +2462,7 @@ section img, section svg {
     filter: blur(5px);
   }
   50% {
-    transform: translate(0px, 50px) scale(1.5);
+    transform: translate(0px, calc(7 * -1 * 5px)) scale(1.5);
     filter: blur(3px);
   }
   100% {
@@ -2465,20 +2472,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(8) {
   position: absolute;
+  top: 20px;
   left: calc((8 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 8;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout8 3s infinite;
 }
 @keyframes bounceAbout8 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(8 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
@@ -2490,7 +2498,7 @@ section img, section svg {
     filter: blur(5px);
   }
   50% {
-    transform: translate(0px, 50px) scale(1.5);
+    transform: translate(0px, calc(8 * -1 * 5px)) scale(1.5);
     filter: blur(3px);
   }
   100% {
@@ -2500,20 +2508,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(9) {
   position: absolute;
+  top: 76px;
   left: calc((9 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 9;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout9 6s infinite;
 }
 @keyframes bounceAbout9 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(9 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
@@ -2525,7 +2534,7 @@ section img, section svg {
     filter: blur(5px);
   }
   50% {
-    transform: translate(0px, 50px) scale(1.5);
+    transform: translate(0px, calc(9 * -1 * 5px)) scale(1.5);
     filter: blur(3px);
   }
   100% {
@@ -2535,20 +2544,21 @@ section img, section svg {
 }
 .anim-about span:nth-child(10) {
   position: absolute;
+  top: 50px;
   left: calc((10 * 10%) - 10%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
   z-index: 10;
-  animation: bounceAbout1 3s infinite;
+  animation: bounceAbout10 6s infinite;
 }
 @keyframes bounceAbout10 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, calc(10 * 15px));
   }
   100% {
     transform: translate(0px, 0px);
@@ -2560,7 +2570,7 @@ section img, section svg {
     filter: blur(5px);
   }
   50% {
-    transform: translate(0px, 50px) scale(1.5);
+    transform: translate(0px, calc(10 * -1 * 5px)) scale(1.5);
     filter: blur(3px);
   }
   100% {

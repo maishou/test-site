@@ -1,0 +1,56 @@
+<!-- Main Banner -->
+<section class="page-banner-sm text-light" ref="bannerBlock">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>News & Events</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="filter">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form">
+          <p>Filter Events by</p>
+          <select class="form-control form-control-lg" v-model="selected" @change="filterNews($event)">
+            <option :value="tag" v-for="(tag,k) in tags" :key="k">[[tag]]</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section -->
+<section class="section-pad-md" ref="newsparent">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 news-list">
+        {%- for event in site.data.news.events reversed -%}
+          <div 
+          ref="article-{{forloop.index}}"
+          class="article active 
+            {%- for tag in event.tags -%}
+              {{tag | prepend: ' '}} 
+            {%- endfor -%}">
+            <div class="image" style="background-image: url({{event.img}});">
+              <span>{{ event.date | markdownify }}</span>
+            </div>
+            <p class="tags">
+              {%- for tag in event.tags -%}
+                <span ref="n-{{tag}}">{{tag}}</span>
+              {%- endfor -%}
+            </p>
+            <h6>{{event.title}}</h6>
+            <p>{{ event.text | markdownify }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- {% include blocks/collaborate.html %} -->

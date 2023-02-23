@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Accurate and innovative molecular modeling">
+    <meta name="author" content="HTuO">
+
+    <!--Thumbnail-->
+    <meta property="og:title" 
+      content="HTuO Biosciences" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.htuobio.com/research.html" />
+    <meta property="og:image" content="https://www.htuobio.com/img/htuobio.png" />
+    <meta property="og:image:secure_url" content="https://www.htuobio.com/img/htuobio.png" />
+
+    <!--Browser tab icon-->
+    <link rel="icon" href="../img/favicon.png">
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+
+    <!-- Vue -->
+    <script src="/js/vue.min.js"></script>
+    <script src="/js/vue-smooth-scroll.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+</html>
+
+
+<body id="page-top" class="research">
+  <div class="container-fluid" id="app">
+    <nav ref="navBlock" class="desktop-nav" :class="{active: navFill}" role="navigation">
+  <div class="container">
+    <ul>
+      <li class="home">
+        <a class="navbar-brand" href="index.html" @click="closeNav()"><span class="brand" aria-label="HTuO Biosciences" alt="HTuO Biosciences">
+            HTuO Biosciences
+          </span></a>
+      </li>
+      <li class="technology nav-item">
+        <a href="/technology.html" @click="closeNav()">Technology</a>
+      </li>
+      <li class="research nav-item">
+        <a href="/research.html" @click="closeNav()">Research</a>
+      </li>
+      <li class="partnership nav-item">
+        <a href="/partnership.html" @click="closeNav()">Partnership</a>
+      </li>
+      <li class="about nav-item">
+        <a href="/about.html" @click="closeNav()">About</a>
+      </li>
+      <li class="news nav-item">
+        <a href="/news.html" @click="closeNav()">News</a>
+      </li>
+      <li class="contact nav-item">
+        <a href="/contact.html" @click="closeNav()">Contact</a>
+      </li>
+      <li class="nav-toggle" @click="clickNav()">
+        <button type="button" :class="{active: navActive}">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </li>
+    </ul>
+  </div> 
+</nav>
+
+<nav class="mobile-menu" aria-expanded="false" aria-label="Mobile Accessibility Navigation Dropdown" :class="{mobile: navActive}" role="navigation">
+  <ul>
+    <li class="technology nav-item">
+      <a href="/technology.html">Technology</a>
+    </li>
+    <li class="research nav-item">
+      <a href="/research.html">Research</a>
+    </li>
+    <li class="partnership nav-item">
+      <a href="/partnership.html">Partnership</a>
+    </li>
+    <li class="about nav-item">
+      <a href="/about.html">About</a>
+    </li>
+    <li class="contact nav-item">
+      <a href="/contact.html">Contact</a>
+    </li>
+    <li class="nav-item social">
+      <a href="https://mobile.twitter.com/htuobiosciences" target="_blank"><img src="img/icon-twitter.svg" alt="Icon Twitter"/></a>
+      <a href="https://ca.linkedin.com/company/htuobio" target="_blank"><img src="img/icon-linkedin.svg" alt="Icon LinkedIn"/></a>
+    </li>
+  </ul>
+</nav>
+
+
+    <!-- Main Banner -->
+<section class="page-banner text-light fill-blue-grad" ref="bannerBlock">
+  <div class="loader"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 banner-block">
+        <h2><small>Our Research</small></h2>
+        <h2>We are designing the future of molecule <span>discovery</span></h2>
+        <p class="lead">HTuO Biosciences develops advanced molecular simulation to accurately predict drug behavior through chemistry and computer programming.</p>
+      </div>
+      <div class="col-md-6 col-md-pull-6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Section -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="img/img-charge-calc-1.jpg" alt="Charge Calculations"/>
+          </div>
+          <div class="col-sm-6">
+            <img src="img/img-charge-calc-2.jpg" alt="Charge Calculations"/>
+          </div>
+        </div>
+        <h3>Charge calculations</h3>
+        <p>The partial charges of water are a function of the environment. Using HTuO’s Force Field, we can correctly calculate the changes in charge on interacting water molecules. This is despite HTuO’s Parameterization for Oxygen leaving water dimers out of the training set.</p>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <img style="max-width: 400px;" src="img/img-charge-calc-3.jpg" alt="Charge Calculations"/>
+          </div>
+        </div>
+
+        <p><small>HTuO’s Force Field is capable of simulating dissociation - <br>a common chemical occurrence in natural systems.</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section -->
+<section class="section-pad-md">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="image-block-left">
+          <img src="img/img-molecule-1.jpg" alt=""/>
+        </div>
+      </div>
+      <div class="col-sm-5 col-sm-push-1">
+        <h3>HTuO simulations include proton transfers</h3>
+        <p>In our training set, we see proton transfers between different functional groups, mimicking the interactions that would naturally occur.</p>
+        <p>In the example presented above, we identified transfer events which predict protons being passed between an Imidazole (pka ~7.0) and a carboxylate group (pka ~5)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section -->
+<section class="section-pad-md">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <h3>HTuO’s Atomic Model goes further</h3>
+        <p>Our platform correctly maintains the structure of ice, without explicit parameterization for water molecules.</p>
+        <p>The training set for our force field parameterization includes alcohols and cyclic structures that contain oxygen, but not water itself. Our platform was able to correctly maintain the structure of Ice in both Molecular Dynamics simulations and using energy minimization algorithms.</p>
+      </div>
+      <div class="col-sm-6 col-sm-push-1">
+        <div class="image-block">
+          <img src="img/img-molecule-2.jpg" alt=""/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section -->
+<section class="fill-light section-pad">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12 image-block left">
+        <div class="image">
+          <img class="img" src="img/img-graph-prediction-error.svg" alt=""/>
+        </div>
+      </div>
+      <div class="col-sm-5 col-sm-push-1 col-xs-12 text-block text-md-left text-sm-center text-xs-center">
+        <h3>Comparing <span>Our Accuracy</span></h3>
+        <p>Using AMBER’s own test for testing force fields, our tools are able to better predict the configurations of molecules in a head-to-head test. It improves the accuracy for the location of atoms, bond lengths and angles between atoms. AMBER cannot predict charge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section -->
+<!-- <section class="fill-blue-grad section-pad text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h3>Root Mean Squared Deviation (RMSD) Error Quantification for Validation Data</h3>
+        <p><small>General Amber Force Field vs HTuO Force Field</small></p>
+        <div class="mobile-graph">
+          <img src="img/img-graph-validation-data.svg" alt=""/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Section -->
+<section class="fill-light section-pad">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <h3>Demonstrating <span>consistent</span> <span>improvement</span></h3>
+        <p>Using AMBER’s own test for testing force fields, our tools are able to better predict the configurations of molecules in a head-to-head test. It improves the accuracy for the location of atoms, bond lengths and angles between atoms. AMBER cannot predict charge.</p>
+        <a href="contact.html" class="btn btn-primary btn-outline btn-arrow">Get in Touch<span class="arrow"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Core Applications</h3>
+        <p>Our primary objective is to utilize the technology to develop drug optimization applications. There are also further applications in material sciences and complex biophysics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ -->
+    <!DOCTYPE html>
+  <footer>
+    <div class="container">
+      <div class="row footer-nav">
+        <div class="col-md-3 logo">
+          <a class="brand" href="index.html"></a>
+        </div>
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-4 break">
+              <h6><a href="research.html">Our Research</a></h6>
+              <h6><a href="technology.html">Our Technology</a></h6>
+              <h6><a href="partnership.html">Partnerships</a></h6>
+            </div>
+            <div class="col-md-4 break">
+              <h6><a href="about.html">About Us</a></h6>
+              <h6><a href="careers.html">Careers</a></h6>
+            </div>
+            <div class="col-md-4 break end">
+              <h6><a href="news.html">News & Events</a></h6>
+              <h6><a href="contact.html">Contact Us</a></h6>
+              <h6><a href="faq.html">FAQ</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <ul class="social">
+            <li>
+              <a href="https://mobile.twitter.com/htuobiosciences" class="tw" target="_blank">
+                <!-- <img src="img/icon-twitter.svg" alt="Icon Twitter"/> -->
+              </a>
+              <a href="https://ca.linkedin.com/company/htuobio" class="li" target="_blank">
+                <!-- <img src="img/icon-linkedin.svg" alt="Icon LinkedIn"/> -->
+              </a>
+            </li>
+            <li>
+              <p>400-610 Main St Vancouver, BC, Canada</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 copyright text-md-left text-sm-center">
+          <p class="copy">©Copyright 2023 HTuO Biosciences Inc.</p>
+        </div>
+        <div class="col-md-6 terms text-md-right text-sm-center">
+          <p><a href="privacy.html">Privacy Policy</a><span>|</span><a href="terms.html">Terms & Conditions</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
+  </div>  
+    <!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/js/retina.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/custom.js"></script>  
+    <script src="/js/banner.js"></script>
+<script src="/js/three/three.min.js"></script>
+<script src="/js/three/OrbitControls.js"></script>
+<script src="/js/three/fast-simplex-noise.js"></script>
+<script src="/js/banner/index.bundle.js"></script>  
+</body>

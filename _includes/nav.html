@@ -1,0 +1,65 @@
+<nav ref="navBlock" class="desktop-nav" :class="{active: navFill}" role="navigation">
+  <div class="container">
+    <ul>
+      <li class="home">
+        <a class="navbar-brand" href="index.html" @click="closeNav()">
+          {%- if site.logo -%}
+          <span class="brand" aria-label="HTuO Biosciences" alt="HTuO Biosciences">
+            HTuO Biosciences
+          </span>
+          {%- else -%} {{ site.title }} {%- endif -%}
+        </a>
+      </li>
+      <li class="technology nav-item">
+        <a href="{{ site.baseurl }}/technology.html" @click="closeNav()">Technology</a>
+      </li>
+      <li class="research nav-item">
+        <a href="{{ site.baseurl }}/research.html" @click="closeNav()">Research</a>
+      </li>
+      <li class="partnership nav-item">
+        <a href="{{ site.baseurl }}/partnership.html" @click="closeNav()">Partnership</a>
+      </li>
+      <li class="about nav-item">
+        <a href="{{ site.baseurl }}/about.html" @click="closeNav()">About</a>
+      </li>
+      <li class="news nav-item">
+        <a href="{{ site.baseurl }}/news.html" @click="closeNav()">News</a>
+      </li>
+      <li class="contact nav-item">
+        <a href="{{ site.baseurl }}/contact.html" @click="closeNav()">Contact</a>
+      </li>
+      <li class="nav-toggle" @click="clickNav()">
+        <button type="button" :class="{active: navActive}">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </li>
+    </ul>
+  </div> 
+</nav>
+
+<nav class="mobile-menu" aria-expanded="false" aria-label="Mobile Accessibility Navigation Dropdown" :class="{mobile: navActive}" role="navigation">
+  <ul>
+    <li class="technology nav-item">
+      <a href="{{ site.baseurl }}/technology.html">Technology</a>
+    </li>
+    <li class="research nav-item">
+      <a href="{{ site.baseurl }}/research.html">Research</a>
+    </li>
+    <li class="partnership nav-item">
+      <a href="{{ site.baseurl }}/partnership.html">Partnership</a>
+    </li>
+    <li class="about nav-item">
+      <a href="{{ site.baseurl }}/about.html">About</a>
+    </li>
+    <li class="contact nav-item">
+      <a href="{{ site.baseurl }}/contact.html">Contact</a>
+    </li>
+    <li class="nav-item social">
+      <a href="https://mobile.twitter.com/htuobiosciences" target="_blank"><img src="img/icon-twitter.svg" alt="Icon Twitter"/></a>
+      <a href="https://ca.linkedin.com/company/htuobio" target="_blank"><img src="img/icon-linkedin.svg" alt="Icon LinkedIn"/></a>
+    </li>
+  </ul>
+</nav>
+

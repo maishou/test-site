@@ -1,0 +1,67 @@
+---
+---
+
+@charset "utf-8";
+
+// Example Defaults
+$base-font-family: Montserrat, Helvetica,  Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+// $text-color:       #00bfff;
+// $background-color: #00bfff;
+// $brand-color:      #00bfff;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// variables.less
+$blue-gray: #396b90;
+$blue-light: #00bfff;
+$blue-dark: #002fa7;
+
+$gray100: #f8f9fa !default;
+$gray200: #e9ecef !default;
+$gray300: #dee2e6 !default;
+$gray400: #ced4da !default;
+$gray500: #adb5bd !default;
+$gray600: #868e96 !default;
+$gray700: #495057 !default;
+$gray800: #343a40 !default;
+$gray900: #212529 !default;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "mixins";
+@import "variables";
+@import "buttons";
+@import "nav";
+@import "layouts";
+@import "svg";
+
+// Make all columns equally high with Bootstrap 3
+// @media (min-width: 768px) {
+//   .aligned-row {
+//     display: flex;
+//     display: -webkit-flex;
+//     flex-wrap: wrap;
+//   }
+// }

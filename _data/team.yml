@@ -1,0 +1,72 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+title: "Team"
+cofounder:
+######################################################
+- name: "Dr. Anthony Fejes"
+  role: "Co-Founder and CEO"
+  image: img/team/anthony_fejes.png
+  text: "Dr. Anthony Fejes holds undergraduate degrees in biochemistry and Independent Studies (Bioinformatics) from the University of Waterloo, as well as a Masters degree in Microbiology & Immunology and a PhD in Bioinformatics from the University of British Columbia. Anthony started his science career as the scientific co-founder and Chief Scientific Officer at Zymeworks Inc, before working for companies such as Fabric Genomics and Tenaya Therapeutics in the Bay Area and New York based SolveBio.  His experience pairs over 20 years of professional experience as a programmer with a deep background in genomics, biochemistry and data analysis, as well as a decade of management and startup experience."
+######################################################
+- name: "Alex Shynkarenko"
+  role: "Co-Founder and CTO"
+  image: img/team/alex_shynkarenko.jpg
+  text: "Alexander Shynkarenko is a computational biologist and data scientist. He graduated from Igor Sikorsky Kyiv Polytechnic Institute with a Master’s in Bioinformatics. and started his career in biotech as a co-founder of Biotopia, the first open labspace in Ukraine, before moving to computational biology. 
+
+Most recently, he worked as a bioinformatician at Ryvu Therapeutics, a Polish drug discovery company, where he provided data science, machine learning, and bioinformatics analyses for novel anticancer drug candidate programs. Alexander is also a board member at Genomics UA, Ukraine’s largest computational biology professional network."
+######################################################
+######################################################
+people:
+- name: "Dr. Yi-Hsuan Lin"
+  role: "Research & Development Lead"
+  image: img/team/yi-hsuan_lin.jpg
+  text: "Dr. Yi-Hsuan Lin completed his bachelors in physics at the University of Illinois at Urbana-Champaign and PhD in physics at the Ohio State University. After that he became a joint postdoctoral fellow at the University of Toronto and the Hospital for Sick Children,  publishing 12 peer-reviewed papers in theoretical biophysics, computational biochemistry, and quantitative biology.  
+
+Dr. Lin joined HTuO Biosciences in January 2021, bringing with him a broad experience in software development, molecular modelling and machine learning."
+######################################################
+- name: "Emily Wilson"
+  role: "Scientist - Molecular Modeling, Development"
+  image: img/team/emiliy_wilson.jpg
+  text: "Emily Wilson is a physicist who is specialized in computational statistical physics. She completed her bachelor’s degree at the University of British Columbia and MSc. at McGill University. At HTuO Emily uses her background in software development and physics to fulfill her role as a Molecular Modelling Scientist. Emily enjoys finding the best solutions to difficult problems and collaborating with her teammates. In her spare time Emily can often be found on skis in the winter and biking in the summer."
+######################################################
+- name: "Dr. Ahmed Ayoub"
+  role: "Scientist - Computational Chemistry"
+  image: img/team/ahmed_ayoub.jpg
+  text: "After ranking first in high school all over Egypt, Dr. Ahmed Ayoub completed his bachelors degree with a full scholarship in pharmacy and pharmaceutical biotechnology at the German University in Cairo. He obtained his PhD in computational chemistry with focus on DFT, Hybrid QMMM biomolecular simulations and drug design at the University of Alberta, where he was a recipient of the prestigious President's International Doctoral Award. He has published about 20 international peer-reviewed papers in biomolecular simulations and drug design with focus on design and understanding of anticancer therapeutics."
+######################################################
+- name: "Ahmad Navid"
+  role: "Software Engineer"
+  image: img/team/ahmad_navid.png
+  text: "Ahmad Navid holds undergraduate degree in Bioinformatics from Quaid-i-Azam University Pakistan as well as a Masters degree in Bioinformatics from National University of Science and Technology Pakistan. In addition to two publications in molecular dynamics simulations, Navid also has experience in artificial intelligence and medical informatics."
+######################################################
+- name: "Jacek Mis"
+  role: "Director of Business Development"
+  image: img/team/jacek.png
+  text: "Jacek Mis is a biotech business development professional with over 20 years of experience in the life sciences sector. His passion for cell biology led him to work behind the bench in several different fields including epigenetics, wound healing, inflammation, and GMO's. As a business professional, he focused on optimizing product-market fit for bioprinting technology, encapsulated antibiotics, radiopharmaceuticals, and cell therapies. He has previously worked at Aspect Biosystems and adMare Bioinnovations. Jacek holds an MBA from Sauder School of Business, MSc in Medical Biotechnology from Jagiellonian University, and an undergrad degree in cell biology and genetics from the University of British Columbia. Based in Vancouver, Canada, Jacek is also a dad, partner, soccer player, runner, and board game enthusiast."
+######################################################
+- name: "Vladimir Nikolic"
+  role: "Software Engineer"
+  image: img/team/vladimir-nikolic.jpg
+  text: "Vladimir holds an undergraduate degree in Software Engineering from the University of Belgrade and a master's degree in Bioinformatics from the University of British Columbia. With the goal of combining his software engineering skills with science, he has worked at the Institute of Physics Belgrade working on a nature-inspired authentication system, at Michael Smith Genome Sciences Centre in Vancouver developing bioinformatics algorithms, and now at HTuO Biosciences as a software engineer. In his free time, Vladimir spends time in nature, reads, and likes to go snowboarding."
+######################################################
+- name: "Samantha Schoffer"
+  role: "Office Manager"
+  image: img/team/samantha.png
+  text: "Samantha, or Sam for short, is originally from Toronto, having graduated from George Brown College specializing in Business Management.   Sam came out to Vancouver 10 years ago for a vacation and never went back.  She's a fan of the arts, enjoys music, dog walking, cat snuggling and, of course, delicious food. "
+######################################################
+# - name: "Your Name"
+#   role: "Future Scientist"
+#   image: img/team/500x500_question.svg
+#   text: "TBA"
+
+
+

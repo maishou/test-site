@@ -1,0 +1,23 @@
+# Site settings
+title: HTuO Biosciences
+email: info@htuobio.com
+description: Designing the future of molecules  # this means to ignore newlines until "baseurl:"
+logo:     #optional, defaults to site title
+  path: 'img/logo-htuo.svg'
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "www.htuobio.com" # the base hostname & protocol for your site
+
+linkedin: htuobio
+
+twitter_username:
+github_username:
+
+# Build settings
+markdown: kramdown
+
+
+collections:
+  posts:
+    output          : true
+  news:
+    output          : true

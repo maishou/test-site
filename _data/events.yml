@@ -1,0 +1,19 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+events:
+
+###############
+- date: "There are no public events currently planned."
+  text: "If you'd like to discuss having HTuO participate in an event, please contact [info@htuobio.com](mailto:info@htuobio.com)."
+###############
+#- date: June 1st, 2022
+#  text: "HTuO's CEO, Dr. Anthony Fejes, will be participating in a panel discussion on [Investing in Life Sciences and Healthtech](https://www.vantec.ca/events/vantec-meeting-104), hosted by Vantec Angel Network."

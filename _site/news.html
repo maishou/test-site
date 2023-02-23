@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Accurate and innovative molecular modeling">
+    <meta name="author" content="HTuO">
+
+    <!--Thumbnail-->
+    <meta property="og:title" 
+      content="HTuO Biosciences" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.htuobio.com/news.html" />
+    <meta property="og:image" content="https://www.htuobio.com/img/htuobio.png" />
+    <meta property="og:image:secure_url" content="https://www.htuobio.com/img/htuobio.png" />
+
+    <!--Browser tab icon-->
+    <link rel="icon" href="../img/favicon.png">
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+
+    <!-- Vue -->
+    <script src="/js/vue.min.js"></script>
+    <script src="/js/vue-smooth-scroll.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+</html>
+
+
+<body id="page-top" class="news">
+  <div class="container-fluid" id="app">
+    <nav ref="navBlock" class="desktop-nav" :class="{active: navFill}" role="navigation">
+  <div class="container">
+    <ul>
+      <li class="home">
+        <a class="navbar-brand" href="index.html" @click="closeNav()"><span class="brand" aria-label="HTuO Biosciences" alt="HTuO Biosciences">
+            HTuO Biosciences
+          </span></a>
+      </li>
+      <li class="technology nav-item">
+        <a href="/technology.html" @click="closeNav()">Technology</a>
+      </li>
+      <li class="research nav-item">
+        <a href="/research.html" @click="closeNav()">Research</a>
+      </li>
+      <li class="partnership nav-item">
+        <a href="/partnership.html" @click="closeNav()">Partnership</a>
+      </li>
+      <li class="about nav-item">
+        <a href="/about.html" @click="closeNav()">About</a>
+      </li>
+      <li class="news nav-item">
+        <a href="/news.html" @click="closeNav()">News</a>
+      </li>
+      <li class="contact nav-item">
+        <a href="/contact.html" @click="closeNav()">Contact</a>
+      </li>
+      <li class="nav-toggle" @click="clickNav()">
+        <button type="button" :class="{active: navActive}">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </li>
+    </ul>
+  </div> 
+</nav>
+
+<nav class="mobile-menu" aria-expanded="false" aria-label="Mobile Accessibility Navigation Dropdown" :class="{mobile: navActive}" role="navigation">
+  <ul>
+    <li class="technology nav-item">
+      <a href="/technology.html">Technology</a>
+    </li>
+    <li class="research nav-item">
+      <a href="/research.html">Research</a>
+    </li>
+    <li class="partnership nav-item">
+      <a href="/partnership.html">Partnership</a>
+    </li>
+    <li class="about nav-item">
+      <a href="/about.html">About</a>
+    </li>
+    <li class="contact nav-item">
+      <a href="/contact.html">Contact</a>
+    </li>
+    <li class="nav-item social">
+      <a href="https://mobile.twitter.com/htuobiosciences" target="_blank"><img src="img/icon-twitter.svg" alt="Icon Twitter"/></a>
+      <a href="https://ca.linkedin.com/company/htuobio" target="_blank"><img src="img/icon-linkedin.svg" alt="Icon LinkedIn"/></a>
+    </li>
+  </ul>
+</nav>
+
+
+    <!-- Main Banner -->
+<section class="page-banner-sm text-light" ref="bannerBlock">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>News & Events</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="filter">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form">
+          <p>Filter Events by</p>
+          <select class="form-control form-control-lg" v-model="selected" @change="filterNews($event)">
+            <option :value="tag" v-for="(tag,k) in tags" :key="k">[[tag]]</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section -->
+<section class="section-pad-md" ref="newsparent">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 news-list"><div 
+          ref="article-1"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-news-lumira.jpg);">
+              <span><p>Nov 4, 2022</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences will be presenting at Life Science BC’s <a href="https://lifesciencesbc.ca/event/invest-in-bc-presented-by-lumira-ventures/">Invest in the West</a>, sponsored by Lumira Ventures. Find us in session 8, where our CEO, Dr. Anthony Fejes, will be presenting and participating in a live Q&amp;A session hosted by LDV Partners.</p>
+</p>
+          </div><div 
+          ref="article-2"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Nov 2-4, 2022</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences will be attending the digital partnering component of <a href="https://informaconnect.com/bioeurope/">BIO Europe 2022</a>. If you are in the business of optimizing drugs, we would like to connect with you. Please find us through the partnering platform or email us directly at <a href="mailto:info@htuobio.com">info@htuobio.com</a> to schedule a meeting.</p>
+</p>
+          </div><div 
+          ref="article-3"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Jun 1, 2022</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO’s CEO, Dr. Anthony Fejes, participated in a panel discussion on <a href="https://www.vantec.ca/events/vantec-meeting-104">Investing in Life Sciences and Healthtech</a>, hosted by Vantec Angel Network.</p>
+</p>
+          </div><div 
+          ref="article-4"
+          class="article active news investment">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Apr 20, 2022</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-investment">investment</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciencs closed an oversubscribed $1.5M USD angel funding round, focused on hiring key staff members, completing R&amp;D milestones and taking their molecular modeling tool to market.</p>
+</p>
+          </div><div 
+          ref="article-5"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Mar 28-31, 2022</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences will be attending <a href="https://informaconnect.com/bioeurope-spring/">BIO-Europe Spring</a>.  Please contact us at <a href="mailto:info@htuobio.com">info@htuobio.com</a> to set up a partnering meeting.</p>
+</p>
+          </div><div 
+          ref="article-6"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Mar 10, 2022</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences participated in the Diagnostics, Digital Health and Therapeutics session at the <a href="https://lifesciencesbc.ca/event/invest-in-the-west-presented-by-amplitude-ventures/">Invest in the West</a> conference, presented by Amplitude Ventures.</p>
+</p>
+          </div><div 
+          ref="article-7"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Jan 10-15, 2022</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences participated in the Bio@JPB partnering event.</p>
+</p>
+          </div><div 
+          ref="article-8"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Nov 4, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences participated in the <a href="https://valhallaangels.com/investment-summit-bc/">Valhalla Investors Summit BC</a> Final, presenting as one of the top five companies</p>
+</p>
+          </div><div 
+          ref="article-9"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Nov 3, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences presented at the <a href="https://lifesciencesbc.ca/event/invest-in-bc/">2021 LSBC Invest in BC</a> event, sponsored by Lumira Ventures.</p>
+</p>
+          </div><div 
+          ref="article-10"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Oct 28, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences presented at <a href="https://www.angelforum.org/">Angel Forum Virtual Meetup</a></p>
+</p>
+          </div><div 
+          ref="article-11"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Oct 25, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>Continuing our progress in the <a href="https://valhallaangels.com/investment-summit-bc/">Valhalla Investors Summit BC</a>, HTuO has been named as one of the top 5 companies, and has progressed to the final, due diligence round.</p>
+</p>
+          </div><div 
+          ref="article-12"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Oct 15, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>After a tough round of pitches and questions at the <a href="https://valhallaangels.com/investment-summit-bc/">Valhalla Investors Summit BC</a>, HTuO Biosciences is thrilled to advance on as one of the Top 11 Startups.</p>
+</p>
+          </div><div 
+          ref="article-13"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Oct 1, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences has been chosen as one of the top 20 companies to join the <a href="https://valhallaangels.com/investment-summit-bc/">Valhalla Investment Summit BC</a> 2021 cohort.</p>
+</p>
+          </div><div 
+          ref="article-14"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Sep 24, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>We are thrilled to announce that we have successfully <strong>closed the first tranche of our pre-seed round</strong>. With help from our co-lead investors <a href="https://www.vantec.ca/cpages/homepage">VANTEC Entrepreneurs (VCC) Fund Inc.</a>, in Canada and <a href="https://swanventurefund.com/">SWAN Venture Fund</a>, in the USA, we have received over <strong>$700,000 USD</strong> (out of $1M USD allotted for the round) from investors in Canada, the USA, and Europe. The funds will allow us to expand our team, in order to move our proof of concept to commercialization and ensure the continued operations of our business.</p>
+</p>
+          </div><div 
+          ref="article-15"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Sep 9, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences has been chosen to participate in the <a href="https://lifesciencesbc.ca/resource/investor-readiness-program-irp/">Life Sciences British Columbia Investor Readiness Program’s</a> fall 2021 cohort.</p>
+</p>
+          </div><div 
+          ref="article-16"
+          class="article active news">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Aug 20, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences is pleased to announce that <a href="https://www.brandeis.edu/chemistry/faculty/herzfeld.html">Dr. Judith Herzfeld</a>, Professor Emerita and Research Professor of Chemistry at Brandeis University,  will become the first member of HTuO’s Scientific Advisory Board on October 1st, 2021. Dr. Herzfeld brings a wealth of experience in molecular simulations and in the creative design of new force fields.</p>
+</p>
+          </div><div 
+          ref="article-17"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Aug 17, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences mentioned as one of the <a href="https://www.vantechjournal.com/p/radar-six-to-watch-rbcx">six companies to watch for in the Vancouver Tech Journal</a>.</p>
+</p>
+          </div><div 
+          ref="article-18"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>May 27, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences has been selected to present at the <a href="https://www.vantec.ca/events/vantec-meeting-94">VANTEC Meeting: Investing in Life Sciences and HealthTech</a>.</p>
+</p>
+          </div><div 
+          ref="article-19"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>May 5, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences has been selected to present at the next Vantec Life Science <a href="https://www.vantec.ca/events/vantec-meeting-93">Vantec Meeting</a>.</p>
+</p>
+          </div><div 
+          ref="article-20"
+          class="article active news awards">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Apr 8, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-awards">awards</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences shares first place at <a href="https://www.tievancouver.org/">Tie Vancouver’s Demo Day</a> along with <a href="https://rehabtronics.com/">Rehabtronics</a>.</p>
+</p>
+          </div><div 
+          ref="article-21"
+          class="article active news event">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Mar 24, 2021</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span><span ref="n-event">event</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences has been selected to present at <a href="https://www.tievancouver.org/">Tie Vancouver’s Demo Day</a>, on April 8th, 2021.</p>
+</p>
+          </div><div 
+          ref="article-22"
+          class="article active news">
+            <div class="image" style="background-image: url(../img/img-waves.jpg);">
+              <span><p>Dec 23, 2020</p>
+</span>
+            </div>
+            <p class="tags"><span ref="n-news">news</span></p>
+            <h6></h6>
+            <p><p>HTuO Biosciences has completed a Friends and Family Round of financing.</p>
+</p>
+          </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- <section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Core Applications</h3>
+        <p>Our primary objective is to utilize the technology to develop drug optimization applications. There are also further applications in material sciences and complex biophysics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ -->
+    <!DOCTYPE html>
+  <footer>
+    <div class="container">
+      <div class="row footer-nav">
+        <div class="col-md-3 logo">
+          <a class="brand" href="index.html"></a>
+        </div>
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-4 break">
+              <h6><a href="research.html">Our Research</a></h6>
+              <h6><a href="technology.html">Our Technology</a></h6>
+              <h6><a href="partnership.html">Partnerships</a></h6>
+            </div>
+            <div class="col-md-4 break">
+              <h6><a href="about.html">About Us</a></h6>
+              <h6><a href="careers.html">Careers</a></h6>
+            </div>
+            <div class="col-md-4 break end">
+              <h6><a href="news.html">News & Events</a></h6>
+              <h6><a href="contact.html">Contact Us</a></h6>
+              <h6><a href="faq.html">FAQ</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <ul class="social">
+            <li>
+              <a href="https://mobile.twitter.com/htuobiosciences" class="tw" target="_blank">
+                <!-- <img src="img/icon-twitter.svg" alt="Icon Twitter"/> -->
+              </a>
+              <a href="https://ca.linkedin.com/company/htuobio" class="li" target="_blank">
+                <!-- <img src="img/icon-linkedin.svg" alt="Icon LinkedIn"/> -->
+              </a>
+            </li>
+            <li>
+              <p>400-610 Main St Vancouver, BC, Canada</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 copyright text-md-left text-sm-center">
+          <p class="copy">©Copyright 2023 HTuO Biosciences Inc.</p>
+        </div>
+        <div class="col-md-6 terms text-md-right text-sm-center">
+          <p><a href="privacy.html">Privacy Policy</a><span>|</span><a href="terms.html">Terms & Conditions</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
+  </div>  
+    <!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/js/retina.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/custom.js"></script>  
+</body>
+
+

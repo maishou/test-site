@@ -290,25 +290,27 @@
       animation: bounceAbout#{$i} ($ran + 3s) infinite;
     }
 
+    // calc(#{$i} * 15px)
     @keyframes bounceAbout#{$i} {
       0% { 
         transform: translate(0px, 0px);
       }
       50% { 
-        transform: translate(0px, calc(#{$i} * 15px));
+        transform: translate(0px, 50px);
       }
       100% { 
         transform: translate(0px, 0px);
       }
     }
 
+    // calc(#{$i} * 5px)
     @keyframes bounceAboutUp#{$i} {
       0% { 
         transform: translate(0px, 0px) scale(1);
         filter: blur(5px);
       }
       50% { 
-        transform: translate(0px, calc(#{$i} * 5px)) scale(1.5);
+        transform: translate(0px, 50px) scale(1.5);
         filter: blur(3px);
       }
       100% { 

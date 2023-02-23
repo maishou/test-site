@@ -281,12 +281,12 @@
     span:nth-child(#{$i}) {
       position: absolute;
       top: #{$rany*1px};
-      left: #{percentage($i*10)};
+      left: #{$i*10%};
       width: 15px;
       height: 15px;
       border-radius: 50%;
       background: #fff;
-      z-index: #{$i};
+      z-index: #{$i+1};
       animation: bounceAbout#{$i} #{$i*3}s infinite;
     }
 

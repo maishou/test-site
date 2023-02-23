@@ -295,7 +295,7 @@
         transform: translate(0px, 0px);
       }
       50% { 
-        transform: translate(0px, calc($i * 15px));
+        transform: translate(0px, calc(#{$i} * 15px));
       }
       100% { 
         transform: translate(0px, 0px);
@@ -308,7 +308,7 @@
         filter: blur(5px);
       }
       50% { 
-        transform: translate(0px, $i * -1 5px) scale(1.5);
+        transform: translate(0px, calc(#{$i}px  * 5px)) scale(1.5);
         filter: blur(3px);
       }
       100% { 

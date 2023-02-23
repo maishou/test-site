@@ -1550,11 +1550,11 @@ section img, section svg {
   background-color: rgba(var(--primary));
   transform: translate(-50%, -50%);
   animation: bounce 5s infinite;
-  animation-delay: calc(1s * 0.3s);
+  animation-delay: 0.3s;
 }
 .anim-atom .b .b1:after {
   animation: bounceReverse 5s infinite;
-  animation-delay: calc(1s * 0.3s);
+  animation-delay: 0.3s;
 }
 .anim-atom .b .b2 {
   width: 5%;
@@ -1564,11 +1564,11 @@ section img, section svg {
   background-color: rgba(var(--primary));
   transform: translate(-50%, -50%);
   animation: bounce 5s infinite;
-  animation-delay: calc(2s * 0.3s);
+  animation-delay: 0.6s;
 }
 .anim-atom .b .b2:after {
   animation: bounceReverse 5s infinite;
-  animation-delay: calc(2s * 0.3s);
+  animation-delay: 0.6s;
 }
 .anim-atom .b .b3 {
   width: 5%;
@@ -1578,11 +1578,11 @@ section img, section svg {
   background-color: rgba(var(--primary));
   transform: translate(-50%, -50%);
   animation: bounce 5s infinite;
-  animation-delay: calc(3s * 0.3s);
+  animation-delay: 0.9s;
 }
 .anim-atom .b .b3:after {
   animation: bounceReverse 5s infinite;
-  animation-delay: calc(3s * 0.3s);
+  animation-delay: 0.9s;
 }
 .anim-atom .b .b4 {
   width: 5%;
@@ -1592,11 +1592,11 @@ section img, section svg {
   background-color: rgba(var(--primary));
   transform: translate(-50%, -50%);
   animation: bounce 5s infinite;
-  animation-delay: calc(4s * 0.3s);
+  animation-delay: 1.2s;
 }
 .anim-atom .b .b4:after {
   animation: bounceReverse 5s infinite;
-  animation-delay: calc(4s * 0.3s);
+  animation-delay: 1.2s;
 }
 .anim-atom .b .b1 {
   top: 32%;
@@ -1625,7 +1625,7 @@ section img, section svg {
   border-radius: 50%;
   border: 3px solid rgba(var(--secondary));
   animation: bounceCircle 5s infinite;
-  animation-delay: calc(0s * 0.3s);
+  animation-delay: 0s;
 }
 .anim-atom .c1 {
   position: absolute;
@@ -1635,7 +1635,7 @@ section img, section svg {
   border-radius: 50%;
   border: 3px solid rgba(var(--secondary));
   animation: bounceCircle 5s infinite;
-  animation-delay: calc(1s * 0.3s);
+  animation-delay: 0.3s;
 }
 .anim-atom .c2 {
   position: absolute;
@@ -1645,7 +1645,7 @@ section img, section svg {
   border-radius: 50%;
   border: 3px solid rgba(var(--secondary));
   animation: bounceCircle 5s infinite;
-  animation-delay: calc(2s * 0.3s);
+  animation-delay: 0.6s;
 }
 .anim-atom .c3 {
   position: absolute;
@@ -1655,7 +1655,7 @@ section img, section svg {
   border-radius: 50%;
   border: 3px solid rgba(var(--secondary));
   animation: bounceCircle 5s infinite;
-  animation-delay: calc(3s * 0.3s);
+  animation-delay: 0.9s;
 }
 .anim-atom .c0 {
   width: 30%;
@@ -2220,7 +2220,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(1) {
   position: absolute;
-  top: 33px;
+  top: 18px;
   left: 10%;
   width: 15px;
   height: 15px;
@@ -2242,7 +2242,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(2) {
   position: absolute;
-  top: 92px;
+  top: 27px;
   left: 20%;
   width: 15px;
   height: 15px;
@@ -2264,7 +2264,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(3) {
   position: absolute;
-  top: 86px;
+  top: 60px;
   left: 30%;
   width: 15px;
   height: 15px;
@@ -2286,7 +2286,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(4) {
   position: absolute;
-  top: 38px;
+  top: 39px;
   left: 40%;
   width: 15px;
   height: 15px;
@@ -2308,7 +2308,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(5) {
   position: absolute;
-  top: 82px;
+  top: 16px;
   left: 50%;
   width: 15px;
   height: 15px;
@@ -2330,7 +2330,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(6) {
   position: absolute;
-  top: 29px;
+  top: 89px;
   left: 60%;
   width: 15px;
   height: 15px;
@@ -2352,7 +2352,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(7) {
   position: absolute;
-  top: 68px;
+  top: 42px;
   left: 70%;
   width: 15px;
   height: 15px;
@@ -2374,7 +2374,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(8) {
   position: absolute;
-  top: 58px;
+  top: 7px;
   left: 80%;
   width: 15px;
   height: 15px;
@@ -2396,7 +2396,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(9) {
   position: absolute;
-  top: 24px;
+  top: 13px;
   left: 90%;
   width: 15px;
   height: 15px;
@@ -2418,7 +2418,7 @@ section img, section svg {
 }
 .anim-about span:nth-child(10) {
   position: absolute;
-  top: 8px;
+  top: 58px;
   left: 100%;
   width: 15px;
   height: 15px;
